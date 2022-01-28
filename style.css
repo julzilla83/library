@@ -1,0 +1,290 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.popup.container {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+    height: 350px;
+    width: 350px;
+    border: 1px solid #86C232;
+    background-color:#222629;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    /* display: none; */
+    margin-left: -175px;
+    margin-top: -225px;
+    top: 50%;
+    left:50%;
+    color: white;
+}
+
+input[type="text"], textarea {
+    background-color : #d1d1d1; 
+    border: 2px solid #222629;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    border-color: #86C232;
+    box-shadow: 0px 0px 5px #86C232;
+}
+
+.shade {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 50%;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.popup, .popup .btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.popup.heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.inputbox {
+    float: right;
+    margin-left: 1rem;
+    width: 155px;
+}
+
+label {
+    width: 300px;
+    display: inline-block;
+    text-align: right;
+}
+
+.popup label.yes {
+    width: 20px;
+}
+
+.checkbox {
+    width: 20px;
+    display: inline-block;
+}
+
+.popup div p {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin: 0 6px 0 10px;
+}
+
+.popup h1 {
+    margin: 0px;
+}
+
+.popup .btn-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.popup button {
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.popup button:hover {
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+div.card {
+    height: 350px;
+    width: 280px;
+    min-height: 300px;
+    min-width: 200px;
+    border: 3px solid #86C232;
+    margin: 20px 20px;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    position: relative;
+    background-color: #6b6e70;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+    color: white;
+    -webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    4px 4px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:         4px 4px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.card:hover {
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(	134, 194, 50, 0.75);
+    -moz-box-shadow:    4px 4px 20px 0px rgba(	134, 194, 50, 0.75);
+    box-shadow:         4px 4px 20px 0px rgba(	134, 194, 50, 0.75); 
+}
+
+button {
+    background-color: #86C232;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #474B4F;
+    -webkit-appearance: none;
+    border: none;
+}
+
+button:hover {
+    background-color: #86C232;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    -webkit-appearance: none;
+    border: none;
+}
+
+button.delete {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 60px;
+    height: 21px;
+    margin: 0px 0px;
+   }
+
+.delwrap{
+    position: absolute;
+    float: right;
+    display: block;
+    top: -25px;
+    left: 201px;
+}
+
+button.toggle {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100px;
+    height: 21px;
+    margin: 0px 0px;
+   }
+
+div.togglewrap {
+    position: absolute;
+    float: right;
+    display: block;
+    top: -25px;
+    left: 100px;
+}
+
+.header {
+    min-height: 10%;
+    margin: 0px;
+    background-color: #61892F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: larger;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.main {
+    padding: 2rem;
+    min-height: 85%;
+    display: flex;
+    justify-content: center;
+    align-content:flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: #222629;
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.9);
+    position: relative;
+    /* background-image: url(./images/background.jpg);
+    background-size: cover; */
+    }
+
+img.book {
+    height: 225px;
+    width: 150px;
+    border: 3px solid #222629;
+    vertical-align: middle;
+    margin: 5px;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:         1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.footer {
+    min-height: 5%;
+    margin: 0px;
+    background-color: #61892F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.card .title{
+    font-weight: 700;
+    font-style: italic;
+}
+
+button.done {
+    background-color:#474B4F;
+    color: white;
+}
+
+button.done:hover {
+    background-color:#6b6e70;
+    color: white;
+}
+
+.add.btn {
+    height: 2rem;
+    width: 7rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 14px;
+    padding: 0px;
+    -webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    4px 4px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:         4px 4px 15px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: -20px;
+    left: 3rem;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+    border: 2px solid white;
+    box-sizing: content-box;
+}
+.add.btn:hover {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(134, 194, 50, 0.75);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(134, 194, 50, 0.75);
+    box-shadow:         0px 0px 20px 0px rgba(134, 194, 50, 0.75);
+}
